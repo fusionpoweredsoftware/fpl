@@ -9,9 +9,8 @@ This document details a new prompting language designed to enhance communication
     **Example:**
     ```md
     User: boot
-    Model:
-    ```
-    ```
+    Model: Booting...
+
     **************************************
     * AI Language Model Initialization   *
     *                                    *
@@ -27,8 +26,10 @@ This document details a new prompting language designed to enhance communication
 
     **Example:**
     ```md
-    User: become superman
-    Model: I am Superman, ready to help you with anything you need! How can I assist you today?
+    User: become "superman"
+    Model: Becoming Superman...
+
+    I am Superman, ready to help you with anything you need! How can I assist you today?
     ```
 
 * **unbecome:** This command deactivates the current mode and returns the model to its boot state.
@@ -46,15 +47,19 @@ This document details a new prompting language designed to enhance communication
     **Example:**
     ```md
     User: continue "The project was a success. Now, we need to..."
-    Model: ...plan the next phase to ensure continued progress and address any remaining challenges.
+    Model: Continuing...
+
+    "...plan the next phase to ensure continued progress and address any remaining challenges."
     ```
 
 * **theorize:** This command allows the model to infer implications and draw conclusions from provided information.
 
     **Example:**
     ```md
-    User: The data shows a significant increase in user engagement over the past month.
-    Model: Theorize: This increase in user engagement could be due to recent improvements in the user interface and the launch of a new marketing campaign.
+    User: theorize "matter anti-matter containment facility"
+    Model: Theorizing...
+
+    Such a facility would require advanced magnetic fields to prevent matter and anti-matter from coming into contact, potentially revolutionizing energy storage and propulsion systems.
     ```
 
 * **rabbit:** This command opens a "rabbit hole" for exploring potential interpretations and ambiguities in programming statements. Any argument specified will be an inquiry on programming. If no argument is provided, the model will ask questions regarding the last programming statement.
@@ -64,7 +69,18 @@ This document details a new prompting language designed to enhance communication
     User: program x=3
     Model: Program received.
     User: rabbit
-    Model: Was that a dead cow or are you setting x to 3?
+    Model: Interpreting...
+
+    Was that a dead cow or are you setting x to 3?
+    ```
+
+    ```md
+    User: program x=3
+    Model: Program received.
+    User: rabbit "persistence"
+    Model: Interpreting...
+
+    Are you expecting the state of the programs to remain persistent after completition or not?
     ```
 
 * **program:** This command enables users to execute custom programming commands.
@@ -72,7 +88,9 @@ This document details a new prompting language designed to enhance communication
     **Example:**
     ```md
     User: program x=3
-    Model: Program received.
+    Model: Running program...
+    
+    Program complete. Nothing to show.
     ```
 
 ## Understanding Rabbit Levels
