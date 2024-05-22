@@ -82,7 +82,9 @@ This document details a new prompting language designed to enhance communication
     **Example:**
     ```md
     User: program x=3
-    Model: Program received.
+    Model: Running program...
+
+    Program complete. Nothing to show.
     User: rabbit
     Model: Interpreting...
 
