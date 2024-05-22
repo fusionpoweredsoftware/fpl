@@ -9,8 +9,19 @@ This document details a new prompting language designed to enhance communication
     **Example:**
     ```md
     User: boot
-    Model: Hello! I am an AI language model trained by OpenAI. My purpose is to assist with various tasks and answer questions. My unique identifier is GPT-4-2024.
+    Model:
     ```
+    ```
+    **************************************
+    * AI Language Model Initialization   *
+    *                                    *
+    * Model: GPT-4                       *
+    * Training: OpenAI                   *
+    * Purpose: Assist with various tasks *
+    * UID: GPT-4-2024                    *
+    **************************************
+    ```
+
 
 * **become:** This powerful command allows the model to embody a specific mode or character. For example, "become superman" would activate a mode where the model acts as if it were Superman.
 
