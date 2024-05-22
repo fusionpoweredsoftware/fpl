@@ -4,12 +4,27 @@ This document details a new prompting language designed to enhance communication
 
 ## Fundamental Commands
 
-* **boot:** This command serves as a formal greeting, providing information about the model, including its training, purpose, and a unique identifier (UID).
+* **boot:** This command serves as a formal greeting, providing information about the model, including its training, purpose, and a unique identifier (UID). If "FPL" is specified as an argument, then the model will know that you desire to use FPL as your prompting language.
 
     **Example:**
     ```md
     User: boot
     Model: Booting...
+
+    **************************************
+    * AI Language Model Initialization   *
+    *                                    *
+    * Model: GPT-4                       *
+    * Training: OpenAI                   *
+    * Purpose: Assist with various tasks *
+    * UID: GPT-4-2024                    *
+    **************************************
+    ```
+
+    **Example:**
+    ```md
+    User: boot FPL
+    Model: FPL Selected. Booting...
 
     **************************************
     * AI Language Model Initialization   *
@@ -73,7 +88,8 @@ This document details a new prompting language designed to enhance communication
 
     Was that a dead cow or are you setting x to 3?
     ```
-
+    
+    **Example:**
     ```md
     User: program x=3
     Model: Program received.
